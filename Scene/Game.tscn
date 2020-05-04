@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://new_tileset.tres" type="TileSet" id=1]
-[ext_resource path="res://Script/Game1.gd" type="Script" id=2]
+[ext_resource path="res://Script/Game2.gd" type="Script" id=2]
 
 [node name="Game" type="Node"]
 
@@ -11,7 +11,7 @@ cell_size = Vector2( 1, 1 )
 format = 1
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 0.25
+wait_time = 0.15
 autostart = true
 
 [node name="TileMap2" type="TileMap" parent="."]
