@@ -36,24 +36,6 @@ func _ready():
 	
 	pass # Replace with function body.
 
-func isAlive(x, y):	
-	var cell = arrays[0][y*X+x]
-	
-	var i = 0
-	
-	for vx in range(x-1, x+2):
-		for vy in range(y-1, y+2):
-			if vx<0 or vy<0 or vx>X-1 or vy>Y-1:
-				continue;
-				
-			i += arrays[0][vy*X+vx]
-	
-	if (cell==1 and (i==3 or i==4)) or (cell==0 and i==3):
-		arrays[1][y*X+x] = 1
-		return
-	
-	arrays[1][y*X+x] = 0
-
 func _draw():
 	#draw_rect(Rect2(0, 0, 4*X, 4*Y), Color.black)
 	for x in range(1, X-1):
